@@ -30,6 +30,34 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/almacenes': RouteRecordInfo<
+      '/almacenes',
+      '/almacenes',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/home': RouteRecordInfo<
+      '/home',
+      '/home',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/productos': RouteRecordInfo<
+      '/productos',
+      '/productos',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/register': RouteRecordInfo<
+      '/register',
+      '/register',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
   }
 
   /**
@@ -46,6 +74,30 @@ declare module 'vue-router/auto-routes' {
     'src/pages/index.vue': {
       routes:
         | '/'
+      views:
+        | never
+    }
+    'src/pages/almacenes.vue': {
+      routes:
+        | '/almacenes'
+      views:
+        | never
+    }
+    'src/pages/home.vue': {
+      routes:
+        | '/home'
+      views:
+        | never
+    }
+    'src/pages/productos.vue': {
+      routes:
+        | '/productos'
+      views:
+        | never
+    }
+    'src/pages/register.vue': {
+      routes:
+        | '/register'
       views:
         | never
     }

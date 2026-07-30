@@ -1,20 +1,42 @@
 /**
  * main.ts
  *
- * Bootstraps Vuetify and other plugins then mounts the App`
+ * Bootstraps Vuetify and other plugins then mounts the App
  */
 
-// Composables
+// COMPOSABLES
 import { createApp } from 'vue'
 
-// Plugins
+// PLUGINS
 import { registerPlugins } from '@/plugins'
 
-// Components
+// COMPONENTS
 import App from './App.vue'
 
-// Styles
+// STYLES
 import 'unfonts.css'
+
+// PWA
+import { registerSW } from 'virtual:pwa-register'
+
+// REGISTRAR SERVICE WORKER
+registerSW({
+
+immediate:false,
+
+onRegistered(r){
+
+console.log("SW registrado",r)
+
+},
+
+onOfflineReady(){
+
+console.log("Offline listo")
+
+}
+
+})
 
 const app = createApp(App)
 
