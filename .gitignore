@@ -3,3 +3,7 @@ dist
 .vscode
 .env
 .env.*
+dev-dist
+dist
+sw.js
+workbox-*.js
